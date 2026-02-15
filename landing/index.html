@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floréale - Arreglos Florales Únicos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+        .font-serif { font-family: 'Playfair+Display', serif; }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gray-900 p-1.5 rounded-lg shadow-inner">
+                    <img src="img/florealelogo.png" alt="Logo" class="h-9 w-auto object-contain">
+                </div>
+                <span class="text-2xl font-serif font-bold text-emerald-700">Floréale</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#" class="hover:text-emerald-600 transition">Inicio</a>
+                <a href="#catalogo" class="hover:text-emerald-600 transition">Catálogo</a>
+                <a href="#contact" class="hover:text-emerald-600 transition">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold leading-tight text-gray-900">
+                La Belleza de las Flores en tu <span class="text-emerald-600 italic">Puerta</span>
+            </h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                Descubre arreglos florales únicos, diseñados a mano para cada ocasión. Calidad, frescura y entrega a tiempo.
+            </p>
+            <a href="#catalogo" class="inline-block bg-emerald-700 text-white px-10 py-4 rounded-full font-bold hover:bg-emerald-800 transition shadow-xl transform hover:-translate-y-1">
+                Ver Arreglos y Comprar
+            </a>
+        </div>
+        <div class="relative">
+            <img src="img/flor.jpg" alt="Hero" class="rounded-3xl shadow-2xl w-full object-cover h-[500px]">
+        </div>
+    </section>
+
+    <section class="bg-emerald-50 py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif font-bold mb-16 text-gray-900">¿Por qué elegir Floréale?</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-emerald-500 group">
+                    <div class="bg-gray-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:bg-emerald-700 transition-colors">
+                        <img src="img/lotoon.png" alt="Frescura" class="h-10 w-10 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Frescura Garantizada</h3>
+                    <p class="text-gray-600 leading-relaxed">Flores recién cortadas, directas del invernadero a tu ramo.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-emerald-500 group">
+                    <div class="bg-gray-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:bg-emerald-700 transition-colors">
+                        <img src="img/casaon.png" alt="Entrega" class="h-10 w-10 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Entrega Express</h3>
+                    <p class="text-gray-600 leading-relaxed">Llevamos la alegría de las flores a cualquier destino.</p>
+                </div>
+                <div class="bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-emerald-500 group">
+                    <div class="bg-gray-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:bg-emerald-700 transition-colors">
+                        <img src="img/mensajeon.png" alt="Diseño" class="h-10 w-10 object-contain">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Diseño Personalizado</h3>
+                    <p class="text-gray-600 leading-relaxed">Crea el arreglo perfecto con nuestros expertos floristas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="py-24 container mx-auto px-6">
+        <h2 class="text-4xl font-serif font-bold text-center mb-16 text-gray-900">Nuestros Arreglos Populares</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="group bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                <div class="overflow-hidden rounded-2xl mb-6 bg-gray-50 flex items-center justify-center h-80">
+                    <img src="img/Girasoles luminosos.png" alt="Girasoles" class="max-h-full max-w-full object-contain transform group-hover:scale-110 transition duration-700">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800">Girasoles Luminosos</h3>
+                <p class="text-emerald-700 font-bold text-xl mt-1">$35.00</p>
+                <button class="mt-4 w-full bg-emerald-700 text-white py-3 rounded-xl hover:bg-emerald-800 transition font-bold shadow-md">Comprar Ahora</button>
+            </div>
+            <div class="group bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                <div class="overflow-hidden rounded-2xl mb-6 bg-gray-50 flex items-center justify-center h-80">
+                    <img src="img/Rosas elegantes.png" alt="Rosas" class="max-h-full max-w-full object-contain transform group-hover:scale-110 transition duration-700">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800">Rosas Elegantes</h3>
+                <p class="text-emerald-700 font-bold text-xl mt-1">$45.00</p>
+                <button class="mt-4 w-full bg-emerald-700 text-white py-3 rounded-xl hover:bg-emerald-800 transition font-bold shadow-md">Comprar Ahora</button>
+            </div>
+            <div class="group bg-white p-5 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                <div class="overflow-hidden rounded-2xl mb-6 bg-gray-50 flex items-center justify-center h-80">
+                    <img src="img/Tulipanes vibrantes.png" alt="Tulipanes" class="max-h-full max-w-full object-contain transform group-hover:scale-110 transition duration-700">
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800">Tulipanes Vibrantes</h3>
+                <p class="text-emerald-700 font-bold text-xl mt-1">$40.00</p>
+                <button class="mt-4 w-full bg-emerald-700 text-white py-3 rounded-xl hover:bg-emerald-800 transition font-bold shadow-md">Comprar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-900 text-white py-20 text-center">
+        <h2 class="text-4xl font-serif font-bold mb-8 italic text-emerald-400">¿Quieres algo especial?</h2>
+        <div class="space-y-4 text-lg">
+            <p>Escríbenos: <a href="mailto:contacto@floreale.com" class="text-emerald-400 font-bold hover:underline">contacto@floreale.com</a></p>
+            <p>Teléfono: <a href="tel:+58123456789" class="text-emerald-400 font-bold hover:underline">+58 123 456 789</a></p>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-400 text-sm bg-white">
+        <p>&copy; 2026 Floréale. Hecho con Amor por <span class="text-emerald-700 font-bold italic underline">Dos Mil Seis</span>.</p>
+    </footer>
+
+</body>
+</html>
